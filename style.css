@@ -87,6 +87,13 @@ body{
     transform: translateZ(0); /* Small hack to trigger hardware acceleration */
 }
 
+.stack-img {
+  will-change: transform;
+}
+
+.office-1-text, .office-2-text {
+  will-change: transform, opacity;
+}
 
 svg line {
   stroke-dasharray: 1500;

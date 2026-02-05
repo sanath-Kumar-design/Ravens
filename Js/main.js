@@ -274,55 +274,23 @@ const pinRevealTL = gsap.timeline({
     trigger: ".pin-section",
     start: "top top",
     end: "+=1200", // pin duration + animation
-    scrub: true,
-    pin: true
-  }
+    scrub: 1,
+    pin: true,
+    anticipatePin: 1,
+    invalidateOnRefresh: true
+  },
+  defaults: { ease: "none" }
 });
+
 pinRevealTL.to({}, { duration: 0.7 });
 
 pinRevealTL.to(".white-panel", {
   yPercent: -95,
-  duration:1.5,
-  ease: "none",
-  scrub: true,
+  duration: 1.2
 }, 0.1);
 
-gsap.set(".stack-img", { y: 0 });
-
-gsap.set(".stack-img:nth-child(2), .stack-img:nth-child(3)", {
-  y: () => window.innerHeight
-});
 
 
-
-pinRevealTL
-  // image 2 comes in
-  .to(".stack-img:nth-child(2)", {
-    y: 40,
-    duration:1.5,
-    scrub:true,
-    ease: "none"
-  })
-  .to(".stack-img:nth-child(1)", {
-    scale: 0.95,
-    duration:1.5,
-    scrub:true,
-    ease: "none"
-  }, "<")
-
-  // image 3 comes in
-  .to(".stack-img:nth-child(3)", {
-    y:80,
-    duration:1.5,
-    scrub:true,
-    ease: "none"
-  })
-  .to(".stack-img:nth-child(2)", {
-    scale: 0.95,
-    duration:1.5,
-    scrub:true,
-    ease: "none"
-  }, "<");
 // Lenis
 const lenis = new Lenis({
   duration: 1.2,
