@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Card</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+    <div class="relative w-80 h-96 bg-white rounded-3xl shadow-2xl overflow-hidden transform hover:scale-105 transition-transform duration-300 ease-in-out">
+        <!-- Background Image with Gradient Overlay -->
+        <div class="absolute inset-0 bg-gradient-to-t from-black to-transparent opacity-80"></div>
+        <img src="./images/office-3.jpg" alt="Interior Design" class="w-full h-full object-cover">
+        
+        <!-- Content Overlay -->
+        <div class="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black via-transparent to-transparent p-6 text-white">
+            <h2 class="text-2xl font-bold mb-2">Elegant Living Space</h2>
+            <p class="text-sm opacity-90 mb-4">Transform your home with minimalist designs and vibrant accents. Perfect for modern living.</p>
+            <button class="bg-white text-gray-800 px-4 py-2 rounded-full font-semibold hover:bg-gray-200 transition-colors duration-200">View Details</button>
+        </div>
+        
+        <!-- Decorative Element -->
+        <div class="absolute top-4 right-4 w-12 h-12 bg-white bg-opacity-20 rounded-full flex items-center justify-center">
+            <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"></path>
+            </svg>
+        </div>
+    </div>
+</body>
+</html>

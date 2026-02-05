@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+    <script src="https://unpkg.com/three@0.158.0/build/three.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Ravens</title>
+</head>
+
+<body>
+
+    <header class="py-5 fixed top-0 left-0 z-[100] text-white flex justify-center w-full gap-9 backdrop-blur">
+        <div>Home</div>
+        <div>Contact</div>
+        <div>Blogs</div>
+        <div>Works</div>
+    </header>
+    <h1 class="logo fixed z-10 font-['Panchang-bold'] text-white -rotate-90 -right-20 top-1/2 text-7xl">
+        Ravens</h1>
+    <main class="main h-[1000vh]">
+
+        <div class="hero-wrapper">
+            <div class="img-container relative h-screen overflow-hidden">
+                <img class="slide active brightness-70" src="./images/home1.jpg" />
+                <img class="slide brightness-70" src="./images/home2.jpg" />
+                <img class="slide brightness-70" src="./images/home3.jpg" />
+                <p
+                    class="heading drop-shadow-lg absolute  text-white text-3xl font-['CabinetGrotesk-Medium'] top-60 left-10 contrast-100">
+                    We Design Thoughtful
+                    Interiors <br> That Turn Everyday Spaces Into Beautiful Homes
+                </p>
+                <div class="counter absolute text-white  font-['Chillax-Semibold'] bottom-2.5 left-1/2">
+                    1/3
+                </div>
+                <div class="progress -rotate-90 -right-30 rounded-2xl overflow-hidden">
+                    <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            class="mt-20 tagline text-white text-4xl  font-['CabinetGrotesk-Medium'] text-center will-change-[transform,opacity]">
+            <p class="">We design spaces that feel right, live better, <br> and quietly elevate everyday life.</p>
+        </div>
+
+
+        <!-- BEDROOM -->
+
+
+        <div class="px-19">
+            <div class="overflow-hidden pt-20  grid grid-cols-2">
+                <div class="relative w-[530px]">
+                    <div
+                        class=" hall-container h-[500px] w-[400px] rounded overflow-hidden relative z-10  shadow-[10px_0_10px_rgba(0,0,0,0.15)] will-change-transform">
+                        <img src="./images/hall.jpg" decoding="async"
+                            class="hall-img absolute object-center w-full h-[120%] object-cover">
+                    </div>
+                    <div
+                        class="hall-area bg-gray-200 absolute bottom-0 right-10 translate-x-[80px] z-0 h-full rounded flex items-center justify-center border w-[200px] will-change-transform">
+                        <div class="rotate-90  flex justify-center item-center flex-col text-center">
+                            <p class="font-['ClashGrotesk-Medium'] whitespace-nowrap text-2xl">Area: 30sqm</p>
+                            <p class="font-['ClashGrotesk-Medium'] whitespace-nowrap text-2xl">Brooklyn Heights, New
+                                York, USA</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center text-white  flex justify-center items-center flex flex-col">
+                    <p class="mb-5 hall-tagline font-['ClashGrotesk-Medium'] text-3xl">Every detail is balanced to feel
+                        open, elegant, <br> and inviting.</p>
+
+                    <div class="design-philosophy-wrapper mx-10 text-start">
+                        <p class="design-philosophy font-['ClashGrotesk-Medium'] text-xl ">Every detail is
+                            balanced to feel open, elegant, and inviting. The space flows naturally, allowing light,
+                            texture, and form to work together without excess. Nothing competes for attention, yet
+                            everything has a purpose. The result is an environment that feels effortless, composed, and
+                            quietly refined.</p>
+                    </div>
+                    <button class="ml-auto mt-10 border-2 rounded-3xl py-2 px-3">View Work</button>
+                </div>
+            </div>
+        </div>
+        <div class="px-19">
+            <div class="overflow-hidden pt-20  grid grid-cols-2">
+                <div
+                    class="text-center text-white font-['ClashGrotesk-Medium'] text-3xl flex justify-center items-center flex-col">
+                    <p class="mb-5 bedroom-tagline">Soft textures and balanced lighting create a calm, uncluttered
+                        space.</p>
+                    <div class="design-description-wrapper">
+                        <p class="design-description text-xl text-start">Soft textures and balanced lighting shape an
+                            atmosphere that feels
+                            calm and intentional.
+                            Each element is placed with restraint, allowing the space to breathe without distraction.
+                            The result is a setting that feels composed, warm, and quietly comfortable.</p>
+                    </div>
+                </div>
+                <div class="relative w-[530px] ml-auto">
+                    <div
+                        class="ml-auto bedroom-container h-[500px] w-[400px] rounded overflow-hidden relative z-10  shadow-[-10px_0_10px_rgba(0,0,0,0.15)]">
+                        <img src="./images/bedroom.jpg"
+                            class="bedroom-img absolute object-center w-full h-[120%] object-cover">
+                    </div>
+                    <div
+                        class="bedroom-area bg-gray-200 absolute bottom-0 -left-35 translate-x-[80px] z-0 h-full rounded flex items-center justify-center w-[200px]">
+                        <div class="-rotate-90  flex justify-center item-center flex-col text-center">
+                            <p class="font-['ClashGrotesk-Medium'] whitespace-nowrap text-2xl">Area: 14sqm</p>
+                            <p class="font-['ClashGrotesk-Medium'] whitespace-nowrap text-2xl">Trastevere, Rome, Italy
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- BEDROOM & KITCHEN -->
+
+        <div class="w-full px-19 kb-section mt-20 flex justify-center items-center">
+            <div class="flex gap-4 h-80">
+                <div class="bathroom-container w-70 rounded-lg overflow-hidden will-change-[transform,opacity]"><img
+                        src="./images/bathroom.jpg" decoding="async"></div>
+                <div class="kitchen-container w-70 rounded-lg overflow-hidden will-change-[transform,opacity]"><img
+                        src="./images/kitchen.jpg" decoding="async"></div>
+            </div>
+            <div class="pl-30 text-white">
+                <p class="wave-text font-['ClashGrotesk-Medium'] font-bold text-3xl tracking-widest">
+                    Crafting bespoke interiors that harmonize elegance with modern functionality.
+                </p>
+            </div>
+        </div>
+
+        <div class="mt-30">
+            <div class="pin-section h-screen overflow-hidden relative z-500">
+                <div class="absolute inset-0 text-gray-500 z-10">
+                    <p class="office-text font-['ClashGrotesk-Medium'] text-9xl text-center mt-20 text-gray-600">
+                        Designed to support focus, flow, and clarity—spaces where work feels structured and effortless.
+                    </p>
+                </div>
+                <div class="brightness-50"><img src="./images/officeRoom.jpg"></div>
+
+                <div class="white-panel absolute inset-0 bg-[rgb(242,219,178)] translate-y-190 z-11 ">
+                    <div class="flex justify-center h-full pt-15 relative">
+                        <div class="image-stack relative w-[600px] h-[520px] ">
+                            <div class="stack-img absolute inset-0 rounded-2xl overflow-hidden">
+                                <img src="./images/office1.jpg" class=" w-full h-full object-cover z-10">
+                            </div>
+                            <div class="stack-img absolute inset-0 rounded-2xl overflow-hidden">
+                                <img src="./images/office-2.jpg" class=" w-full h-full object-cover z-10">
+                            </div>
+                            <div class="stack-img absolute inset-0 rounded-2xl overflow-hidden">
+                                <img src="./images/office-3.jpg" class=" w-full h-full object-cover z-10">
+                            </div>
+                        </div>
+
+                        <div class="office-1-text absolute top-1/3  left-30 text-center w-60">
+                            <p class=" font-['ClashGrotesk-Medium'] text-2xl">Smart Space Planning</p>
+                            <p class="text-gray-700">Optimized layouts that balance function, comfort, and aesthetics.
+                            </p>
+                        </div>
+                        <div class="office-2-text absolute top-1/3  right-30 text-center w-60">
+                            <p class=" font-['ClashGrotesk-Medium'] text-2xl">End-to-End Design</p>
+                            <p class="text-gray-700">From structure to finishes, we design every detail seamlessly.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="./Js/main.js"></script>
+</body>
+
+</html>
